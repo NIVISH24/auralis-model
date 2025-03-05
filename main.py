@@ -6,7 +6,7 @@ from transformers import pipeline
 
 # Set your sampling rate and chunk duration (in seconds)
 SAMPLERATE = 16000
-CHUNK_DURATION = 3  # seconds
+CHUNK_DURATION = 10  # seconds
 CHUNK_SAMPLES = CHUNK_DURATION * SAMPLERATE
 
 # Initialize the ASR pipeline (chunk_length_s can be set to match your chunk duration)
@@ -32,7 +32,7 @@ def process_audio():
             chunk = buffer[:CHUNK_SAMPLES]
             buffer = buffer[CHUNK_SAMPLES:]  # retain leftover samples
             # Transcribe the chunk (input can be a numpy array; samplerate is inferred)
-            result = asr(chunk, sampling_rate=SAMPLERATE)
+            result = asr({"array": chunk, "sampling_rate": SAMPLERATE})
             print("Recognized:", result["text"].strip())
 
 def main():
