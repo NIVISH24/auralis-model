@@ -1,0 +1,215 @@
+2025-03-06 00:56:12,548 - DEBUG - Using proactor: IocpProactor
+2025-03-06 00:56:12,551 - DEBUG - Initializing SpeechProcessor...
+2025-03-06 00:56:12,558 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-06 00:56:13,019 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-06 00:56:13,670 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/generation_config.json HTTP/1.1" 200 0
+2025-03-06 00:56:15,295 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-03-06 00:56:15,670 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-03-06 00:56:16,028 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-03-06 00:56:16,323 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-03-06 00:56:16,610 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-06 00:56:17,629 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-03-06 00:56:17,947 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-03-06 00:56:18,241 - DEBUG - https://huggingface.co:443 "HEAD /distil-whisper/distil-small.en/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-03-06 00:56:18,681 - DEBUG - Listing available input devices:
+2025-03-06 00:56:18,683 - DEBUG - Device 0: Microsoft Sound Mapper - Input
+2025-03-06 00:56:18,684 - DEBUG - Device 1: Microphone Array (Realtek(R) Au
+2025-03-06 00:56:18,685 - DEBUG - Device 2: Headset (2- Sam's Beats Studio 
+2025-03-06 00:56:18,685 - DEBUG - Device 6: Primary Sound Capture Driver
+2025-03-06 00:56:18,687 - DEBUG - Device 7: Microphone Array (Realtek(R) Audio)
+2025-03-06 00:56:18,688 - DEBUG - Device 8: Headset (2- Sam's Beats Studio Pro)
+2025-03-06 00:56:18,688 - DEBUG - Device 14: Headset (2- Sam's Beats Studio Pro)
+2025-03-06 00:56:18,689 - DEBUG - Device 15: Microphone Array (Realtek(R) Audio)
+2025-03-06 00:56:18,690 - DEBUG - Device 17: Stereo Mix (Realtek HD Audio Stereo input)
+2025-03-06 00:56:18,691 - DEBUG - Device 18: Mic in at front panel (black) (Mic in at front panel (black))
+2025-03-06 00:56:18,692 - DEBUG - Device 19: Microphone Array (Realtek HD Audio Mic input)
+2025-03-06 00:56:18,692 - DEBUG - Device 22: PC Speaker (Realtek HD Audio output with SST)
+2025-03-06 00:56:18,694 - DEBUG - Device 26: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(WH-CH710N))
+2025-03-06 00:56:18,695 - DEBUG - Device 30: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(Nautica S100))
+2025-03-06 00:56:18,696 - DEBUG - Device 32: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(Dime-Black))
+2025-03-06 00:56:18,696 - DEBUG - Device 35: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(Venue))
+2025-03-06 00:56:18,698 - DEBUG - Device 38: Input (@System32\drivers\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0
+;(motorola edge 30))
+2025-03-06 00:56:18,698 - DEBUG - Device 41: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(Sam's Beats Studio Pro))
+2025-03-06 00:56:18,698 - DEBUG - Device 43: Input ()
+2025-03-06 00:56:41,864 - DEBUG - Audio stream started on device 2. Listening...
+2025-03-06 00:56:48,848 - DEBUG - ASR recognized: management system is a software solution designed to efficiently
+2025-03-06 00:56:48,849 - DEBUG - Current accumulated input: management system is a software solution designed to efficiently
+2025-03-06 00:56:49,992 - DEBUG - ASR recognized: can manage, open and digital data in a structured
+2025-03-06 00:56:49,993 - DEBUG - Current accumulated input: management system is a software solution designed to efficiently can manage, open and digital data in a structured
+2025-03-06 00:56:49,994 - DEBUG - Validating input with context:
+2025-03-06 00:56:49,995 - DEBUG - 
+2025-03-06 00:56:49,997 - DEBUG - Sending validation prompt:
+2025-03-06 00:56:49,998 - DEBUG - Analyze the conversation snippet and return ONLY valid JSON with the following keys:
+- "validation": either "talk" or "listen"
+- "corrected_text": the corrected version if needed
+- "reasoning": a brief explanation
+
+Return ONLY JSON with no additional text.
+
+Current Context: 
+New Input:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+
+Consider: factual accuracy, context alignment, completeness, ambiguity, and contradictions.
+2025-03-06 00:56:50,025 - DEBUG - AsyncClient endpoint: Not Specified
+2025-03-06 00:56:50,038 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-06 00:56:50,040 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001CC95954340>
+2025-03-06 00:56:50,041 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:50,043 - DEBUG - send_request_headers.complete
+2025-03-06 00:56:50,044 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-06 00:56:50,044 - DEBUG - send_request_body.complete
+2025-03-06 00:56:50,045 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:54,868 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Wed, 05 Mar 2025 19:26:54 GMT'), (b'Content-Length', b'551')])
+2025-03-06 00:56:54,870 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-06 00:56:54,871 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-06 00:56:54,871 - DEBUG - receive_response_body.complete
+2025-03-06 00:56:54,873 - DEBUG - response_closed.started
+2025-03-06 00:56:54,873 - DEBUG - response_closed.complete
+2025-03-06 00:56:54,875 - DEBUG - Full raw API response: model='llama3.2' created_at='2025-03-05T19:26:54.8674832Z' done=True done_reason='stop' total_duration=4824086000 load_duration=3982492000 prompt_eval_count=124 prompt_eval_duration=73853000 eval_count=54 eval_duration=762768000 message=Message(role='assistant', content='{"validation":"talk","corrected_text": "management system is a software solution designed to efficiently manage, access, and digitize data in a structured format.","reasoning": "Added \'access\' for better clarity, added \'digitize\' for accuracy."}', images=None, tool_calls=None)
+2025-03-06 00:56:54,876 - DEBUG - Received validation response: {"validation":"talk","corrected_text": "management system is a software solution designed to efficiently manage, access, and digitize data in a structured format.","reasoning": "Added 'access' for better clarity, added 'digitize' for accuracy."}
+2025-03-06 00:56:54,878 - DEBUG - Parsed validation response: {'validation': 'talk', 'corrected_text': 'management system is a software solution designed to efficiently manage, access, and digitize data in a structured format.', 'reasoning': "Added 'access' for better clarity, added 'digitize' for accuracy."}
+2025-03-06 00:56:54,881 - DEBUG - Validation result: {'validation': 'talk', 'corrected_text': 'management system is a software solution designed to efficiently manage, access, and digitize data in a structured format.', 'reasoning': "Added 'access' for better clarity, added 'digitize' for accuracy."}
+2025-03-06 00:56:54,882 - DEBUG - Changing state from listen to talk
+2025-03-06 00:56:54,883 - DEBUG - Sending conversation prompt:
+2025-03-06 00:56:54,884 - DEBUG - You're a helpful assistant. Current conversation:
+
+User: management system is a software solution designed to efficiently manage, access, and digitize data in a structured format.
+Assistant:
+2025-03-06 00:56:54,910 - DEBUG - AsyncClient endpoint: Not Specified
+2025-03-06 00:56:54,914 - DEBUG - Full raw conversation response: <async_generator object AsyncClient._request.<locals>.inner at 0x000001CC959386C0>
+2025-03-06 00:56:54,916 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-06 00:56:54,919 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001CC95956740>
+2025-03-06 00:56:54,920 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:54,921 - DEBUG - send_request_headers.complete
+2025-03-06 00:56:54,922 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-06 00:56:54,923 - DEBUG - send_request_body.complete
+2025-03-06 00:56:54,923 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:55,027 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 05 Mar 2025 19:26:55 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-06 00:56:55,029 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-06 00:56:55,030 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-06 00:56:56,014 - DEBUG - receive_response_body.complete
+2025-03-06 00:56:56,015 - DEBUG - response_closed.started
+2025-03-06 00:56:56,015 - DEBUG - response_closed.complete
+2025-03-06 00:56:56,017 - DEBUG - Full generated response: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+2025-03-06 00:56:56,018 - DEBUG - Added exchange. Context now has 1 entries.
+2025-03-06 00:56:56,019 - DEBUG - Changing state from talk to listen
+2025-03-06 00:56:56,304 - DEBUG - ASR recognized: manor. It serves as a critical component in
+2025-03-06 00:56:56,305 - DEBUG - Current accumulated input: manor. It serves as a critical component in
+2025-03-06 00:56:56,523 - DEBUG - ASR recognized: modern computing enabling organizations to determine
+2025-03-06 00:56:56,524 - DEBUG - Current accumulated input: manor. It serves as a critical component in modern computing enabling organizations to determine
+2025-03-06 00:56:56,525 - DEBUG - Validating input with context:
+2025-03-06 00:56:56,525 - DEBUG - User:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+AI: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+2025-03-06 00:56:56,527 - DEBUG - Sending validation prompt:
+2025-03-06 00:56:56,527 - DEBUG - Analyze the conversation snippet and return ONLY valid JSON with the following keys:
+- "validation": either "talk" or "listen"
+- "corrected_text": the corrected version if needed
+- "reasoning": a brief explanation
+
+Return ONLY JSON with no additional text.
+
+Current Context: User:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+AI: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+New Input:  manor. It serves as a critical component in modern computing enabling organizations to determine
+
+Consider: factual accuracy, context alignment, completeness, ambiguity, and contradictions.
+2025-03-06 00:56:56,549 - DEBUG - AsyncClient endpoint: Not Specified
+2025-03-06 00:56:56,551 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-06 00:56:56,553 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001CC95954100>
+2025-03-06 00:56:56,554 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:56,555 - DEBUG - send_request_headers.complete
+2025-03-06 00:56:56,556 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-06 00:56:56,557 - DEBUG - send_request_body.complete
+2025-03-06 00:56:56,558 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:57,190 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Wed, 05 Mar 2025 19:26:57 GMT'), (b'Content-Length', b'456')])
+2025-03-06 00:56:57,191 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-06 00:56:57,192 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-06 00:56:57,193 - DEBUG - receive_response_body.complete
+2025-03-06 00:56:57,193 - DEBUG - response_closed.started
+2025-03-06 00:56:57,194 - DEBUG - response_closed.complete
+2025-03-06 00:56:57,195 - DEBUG - Full raw API response: model='llama3.2' created_at='2025-03-05T19:26:57.1900255Z' done=True done_reason='stop' total_duration=633500300 load_duration=61429500 prompt_eval_count=215 prompt_eval_duration=64488000 eval_count=38 eval_duration=503925000 message=Message(role='assistant', content='{"validation": "listen", "corrected_text": "management system", "reasoning": "Typo, corrected the typo from \\"manor\\" to \\"management system\\"" }', images=None, tool_calls=None)
+2025-03-06 00:56:57,195 - DEBUG - Received validation response: {"validation": "listen", "corrected_text": "management system", "reasoning": "Typo, corrected the typo from \"manor\" to \"management system\"" }
+2025-03-06 00:56:57,197 - DEBUG - Parsed validation response: {'validation': 'listen', 'corrected_text': 'management system', 'reasoning': 'Typo, corrected the typo from "manor" to "management system"'}
+2025-03-06 00:56:57,198 - DEBUG - Validation result: {'validation': 'listen', 'corrected_text': 'management system', 'reasoning': 'Typo, corrected the typo from "manor" to "management system"'}
+2025-03-06 00:56:57,199 - DEBUG - Validation indicates 'listen' mode. Continuing to accumulate input.
+2025-03-06 00:56:58,023 - DEBUG - ASR recognized: to manipulate and secure their data effectively.
+2025-03-06 00:56:58,025 - DEBUG - Current accumulated input: manor. It serves as a critical component in modern computing enabling organizations to determine to manipulate and secure their data effectively.
+2025-03-06 00:56:58,026 - DEBUG - Validating input with context:
+2025-03-06 00:56:58,027 - DEBUG - User:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+AI: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+2025-03-06 00:56:58,027 - DEBUG - Sending validation prompt:
+2025-03-06 00:56:58,027 - DEBUG - Analyze the conversation snippet and return ONLY valid JSON with the following keys:
+- "validation": either "talk" or "listen"
+- "corrected_text": the corrected version if needed
+- "reasoning": a brief explanation
+
+Return ONLY JSON with no additional text.
+
+Current Context: User:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+AI: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+New Input:  manor. It serves as a critical component in modern computing enabling organizations to determine to manipulate and secure their data effectively.
+
+Consider: factual accuracy, context alignment, completeness, ambiguity, and contradictions.
+2025-03-06 00:56:58,050 - DEBUG - AsyncClient endpoint: Not Specified
+2025-03-06 00:56:58,052 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-06 00:56:58,055 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001CC94B66DD0>
+2025-03-06 00:56:58,056 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:58,057 - DEBUG - send_request_headers.complete
+2025-03-06 00:56:58,058 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-06 00:56:58,058 - DEBUG - send_request_body.complete
+2025-03-06 00:56:58,059 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:58,562 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Wed, 05 Mar 2025 19:26:58 GMT'), (b'Content-Length', b'420')])
+2025-03-06 00:56:58,563 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-06 00:56:58,564 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-06 00:56:58,565 - DEBUG - receive_response_body.complete
+2025-03-06 00:56:58,565 - DEBUG - response_closed.started
+2025-03-06 00:56:58,566 - DEBUG - response_closed.complete
+2025-03-06 00:56:58,567 - DEBUG - Full raw API response: model='llama3.2' created_at='2025-03-05T19:26:58.5621879Z' done=True done_reason='stop' total_duration=504831000 load_duration=57463100 prompt_eval_count=222 prompt_eval_duration=31592000 eval_count=31 eval_duration=412749000 message=Message(role='assistant', content='{"validation": "talk", "corrected_text": "management system", "reasoning": "Inaccurate word; correct spelling used."}', images=None, tool_calls=None)
+2025-03-06 00:56:58,568 - DEBUG - Received validation response: {"validation": "talk", "corrected_text": "management system", "reasoning": "Inaccurate word; correct spelling used."}
+2025-03-06 00:56:58,569 - DEBUG - Parsed validation response: {'validation': 'talk', 'corrected_text': 'management system', 'reasoning': 'Inaccurate word; correct spelling used.'}
+2025-03-06 00:56:58,569 - DEBUG - Validation result: {'validation': 'talk', 'corrected_text': 'management system', 'reasoning': 'Inaccurate word; correct spelling used.'}
+2025-03-06 00:56:58,570 - DEBUG - Changing state from listen to talk
+2025-03-06 00:56:58,571 - DEBUG - Sending conversation prompt:
+2025-03-06 00:56:58,572 - DEBUG - You're a helpful assistant. Current conversation:
+User:  management system is a software solution designed to efficiently can manage, open and digital data in a structured
+AI: That's correct! A management system can help organizations streamline their operations, improve data accuracy, and enhance decision-making by providing a centralized platform for managing and analyzing large amounts of data. Some common features of a management system include data entry, data storage, reporting, and analytics capabilities. What specific aspects of management systems would you like to know more about?
+User: management system
+Assistant:
+2025-03-06 00:56:58,595 - DEBUG - AsyncClient endpoint: Not Specified
+2025-03-06 00:56:58,596 - DEBUG - Full raw conversation response: <async_generator object AsyncClient._request.<locals>.inner at 0x000001CC9593B040>
+2025-03-06 00:56:58,598 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-03-06 00:56:58,601 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001CC93E116F0>
+2025-03-06 00:56:58,602 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:58,603 - DEBUG - send_request_headers.complete
+2025-03-06 00:56:58,603 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-06 00:56:58,604 - DEBUG - send_request_body.complete
+2025-03-06 00:56:58,605 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-06 00:56:58,709 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 05 Mar 2025 19:26:58 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-03-06 00:56:58,709 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-06 00:56:58,710 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-06 00:57:01,371 - DEBUG - receive_response_body.complete
+2025-03-06 00:57:01,371 - DEBUG - response_closed.started
+2025-03-06 00:57:01,373 - DEBUG - response_closed.complete
+2025-03-06 00:57:01,374 - DEBUG - Full generated response: I'd love to learn more about the different types of management systems, such as:
+
+1. Enterprise Resource Planning (ERP) systems: These are comprehensive software solutions that integrate all aspects of an organization's operations, including financials, human resources, supply chain management, and customer relationship management.
+
+2. Customer Relationship Management (CRM) systems: These are specialized management systems designed to manage and analyze customer interactions, sales, marketing, and customer service activities.
+
+3. Project Management Systems: These help teams manage projects from start to finish, track progress, and allocate resources efficiently.
+
+4. Supply Chain Management (SCM) systems: These optimize the flow of goods, services, and information from raw materials to end customers.
+
+5. Digital Asset Management (DAM) systems: These are designed to store, organize, and provide access to digital assets such as images, videos, and documents.
+
+Which one of these aspects would you like me to elaborate on?
+2025-03-06 00:57:01,375 - DEBUG - Added exchange. Context now has 2 entries.
+2025-03-06 00:57:01,376 - DEBUG - Changing state from talk to listen
+2025-03-06 00:57:01,563 - DEBUG - ASR recognized: from small applications to
+2025-03-06 00:57:01,564 - DEBUG - Current accumulated input: from small applications to
+2025-03-06 00:57:03,223 - DEBUG - KeyboardInterrupt received. Exiting...
