@@ -14,18 +14,6 @@ The Auralis Model repository powers the AI-driven learning system with:
 - **Speech-to-Text:** Hugging Face's Distil-Whisper  
 - **Dependencies:** Python, PyTorch  
 
-#### **Installation**  
-```bash
-git clone https://github.com/NIVISH24/auralis-model
-cd auralis-model
-pip install -r requirements.txt
-uvicorn main:app --reload
-```  
-
-#### **Endpoints**  
-- `/generate-response` – LLM-based tutoring interaction  
-- `/transcribe` – Speech-to-text conversion  
-
 #### **Related Repositories**  
 🔗 [Auralis Frontend](https://github.com/NIVISH24/auralis-frontend)  
 🔗 [Auralis Backend](https://github.com/NIVISH24/auralis-backend)  
